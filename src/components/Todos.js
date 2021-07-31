@@ -8,7 +8,7 @@ import {
   Switch,
   Route,
   Redirect,
-  Link
+  Link,
 } from "react-router-dom";
 
 function Todos() {
@@ -33,7 +33,7 @@ function Todos() {
               return (
                 <li key={todo.id}>
                   <Router>
-                  <Link to="/about">About</Link>
+                    <Link to="/about">{todo.title}</Link>
                   </Router>
                   <br />
                   {todo.completed == true ? (
