@@ -11,8 +11,6 @@ import {
   Link
 } from "react-router-dom";
 
-import TodoDetails from "./TodoDetails.js";
-
 function Todos() {
   const { data, error } = useQuery(TODOS_QUERY);
 
@@ -36,7 +34,6 @@ function Todos() {
                 <li key={todo.id}>
                   <Router>
                   <Link to="/about">About</Link>
-
                   </Router>
                   <br />
                   {todo.completed == true ? (
